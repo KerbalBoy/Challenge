@@ -34,5 +34,15 @@ namespace Challenge
             MisbahForm form = new MisbahForm();
             form.Show();
         }
+
+        private void projectName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

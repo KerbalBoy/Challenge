@@ -18,25 +18,5 @@ namespace Challenge
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-
-        public static void Nourhan()
-        {
-            
-        }
-
-        public static void Irisha()
-        {
-
-        }
-
-        public static void Misbah()
-        {
-
-        }
-
-        public static void Test()
-        {
-            
-        }
     }
 }

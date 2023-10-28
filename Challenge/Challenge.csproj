@@ -58,6 +58,12 @@
     <Compile Include="IrishaForm.Designer.cs">
       <DependentUpon>IrishaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProject.Designer.cs">
+      <DependentUpon>MainProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="MisbahForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProject.resx">
+      <DependentUpon>MainProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NourhanForm.resx">
       <DependentUpon>NourhanForm.cs</DependentUpon>
