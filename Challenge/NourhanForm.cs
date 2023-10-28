@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -19,52 +20,7 @@ namespace Challenge
         {
             InitializeComponent();
 
-            
-
-            label1.Text = @"Purpose: 
-Helping young people save towards wanted things.";
-
-            label2.Text = @"Please enter in the amount of money that went IN and OUT of your account in the past 3 months:
-            the data will appear in the form:
-month 1, in:
-month 1: out
-month 2: in
-etc...
-the app will then work out how much you can afford to contribute to your chosen object :";
-
-            starting_value = svalue;
-
-
-            double svalue = 0d; // value in bank at start of each month
-            double evalue = 0d; //value in bank at ennd of each month
-            for (int i = 1; i < 4; i++)
-            {
-                label3.Text = $"Month {i}, in : ";
-                svalue += Convert.ToDouble(Console.ReadLine());
-                label4.Text = ($"Month {i}, out : ");
-                evalue += Convert.ToDouble(Console.ReadLine());
-            }
-
-            double saving = (svalue - evalue) / 3; /*average (of 3 month), calculates how much money 
-                                                    the person will be able to contribute each month */
-
-            label5.Text = ("Would your parents like to make a contribution? enter 'yes' or 'no'.");
-            string permission = Console.ReadLine();
-            if (permission == "yes")
-            {
-
-                label6.Text = "How much would you like to contribute?";
-                double contribution = Convert.ToDouble(Console.ReadLine());
-            }
-
-            label7.Text = ("How much does the object that you would like to purchase cost?");
-
-            double cost = Convert.ToDouble(Console.ReadLine());
-
-            long weeks = Convert.ToInt64((Math.Round(cost / saving)));
-
-            label8.Text = ($@" Since your desired object costs £{cost}, and you will to contibute £{saving} each month towards it
-, it would take {weeks} weeks for you to afford it.");
+           
 
         }
 
@@ -85,6 +41,80 @@ the app will then work out how much you can afford to contribute to your chosen 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            
+             
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Our purpose is to help young people save towards smaller aspects of their " +
+                "lives such as a new phone, game or something fun by introducting them to the concept of saving" +
+                " what they can afford to monthly in order to purchase it, and how many weeks that process will" +
+                " take");
+        }
+
+        private void NourhanForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double svalue = Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox3.Text) + Convert.ToDouble(textBox5.Text);
+            double evalue = Convert.ToDouble(textBox2.Text) + Convert.ToDouble(textBox4.Text) + Convert.ToDouble(textBox6.Text);
+            double savings = (svalue - evalue) / 3 + Convert.ToDouble(textBox7.Text);
+
+            label10.Text = Convert.ToString(Math.Round(savings));
+        }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double svalue = Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox3.Text) + Convert.ToDouble(textBox5.Text);
+            double evalue = Convert.ToDouble(textBox2.Text) + Convert.ToDouble(textBox4.Text) + Convert.ToDouble(textBox6.Text);
+            double savings = (svalue - evalue) / 3 + Convert.ToDouble(textBox7.Text);
+
+            int weeks = Convert.ToInt16(Math.Round(Convert.ToDouble(textBox8.Text)/savings));  
+            label18.Text = $"{ Convert.ToString(weeks)} weeks";
         }
     }
 }
