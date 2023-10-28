@@ -59,6 +59,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // header
@@ -215,7 +217,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 489);
+            this.label9.Location = new System.Drawing.Point(12, 478);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 20);
             this.label9.TabIndex = 26;
@@ -250,9 +252,9 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(385, 518);
+            this.textBox7.Location = new System.Drawing.Point(407, 521);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(137, 26);
+            this.textBox7.Size = new System.Drawing.Size(184, 26);
             this.textBox7.TabIndex = 32;
             // 
             // label13
@@ -326,11 +328,33 @@
             this.label18.TabIndex = 41;
             this.label18.Text = "# of weeks";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(723, 583);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(484, 29);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "start saving now and get that money to grow!";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(723, 628);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(39, 29);
+            this.label20.TabIndex = 43;
+            this.label20.Text = "£0";
+            // 
             // NourhanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 692);
+            this.ClientSize = new System.Drawing.Size(1237, 692);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -361,6 +385,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.header);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NourhanForm";
             this.Text = "NourhanForm";
@@ -402,5 +427,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
     }
 }
