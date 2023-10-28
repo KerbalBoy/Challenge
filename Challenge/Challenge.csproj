@@ -52,10 +52,31 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IrishaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IrishaForm.Designer.cs">
+      <DependentUpon>IrishaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisbahForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisbahForm.Designer.cs">
+      <DependentUpon>MisbahForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NourhanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NourhanForm.Designer.cs">
+      <DependentUpon>NourhanForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NourhanForm.resx">
+      <DependentUpon>NourhanForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -25,6 +25,26 @@ namespace Challenge
         private void clickMe_Click(object sender, EventArgs e)
         {
             textHere.Text = "I have been clicked!";
+
+            Program.Test();
+        }
+
+        private void nourhanPage_Click(object sender, EventArgs e)
+        {
+            NourhanForm form = new NourhanForm();
+            form.Show();
+        }
+
+        private void irishaPage_Click(object sender, EventArgs e)
+        {
+            IrishaForm form = new IrishaForm();
+            form.Show();
+        }
+
+        private void misbahPage_Click(object sender, EventArgs e)
+        {
+            MisbahForm form = new MisbahForm();
+            form.Show();
         }
     }
 }

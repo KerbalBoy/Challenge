@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Challenge
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -17,6 +17,26 @@ namespace Challenge
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+        }
+
+        public static void Nourhan()
+        {
+            
+        }
+
+        public static void Irisha()
+        {
+
+        }
+
+        public static void Misbah()
+        {
+
+        }
+
+        public static void Test()
+        {
+            
         }
     }
 }
