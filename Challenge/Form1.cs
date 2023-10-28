@@ -17,18 +17,6 @@ namespace Challenge
             InitializeComponent();
         }
 
-        private void textHere_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void clickMe_Click(object sender, EventArgs e)
-        {
-            textHere.Text = "I have been clicked!";
-
-            Program.Test();
-        }
-
         private void nourhanPage_Click(object sender, EventArgs e)
         {
             NourhanForm form = new NourhanForm();
