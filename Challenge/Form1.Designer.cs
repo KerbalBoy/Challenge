@@ -28,33 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.clickMe = new System.Windows.Forms.Button();
-            this.textHere = new System.Windows.Forms.Label();
             this.projectName = new System.Windows.Forms.Label();
             this.nourhanPage = new System.Windows.Forms.Button();
             this.misbahPage = new System.Windows.Forms.Button();
             this.irishaPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // clickMe
-            // 
-            this.clickMe.Location = new System.Drawing.Point(340, 217);
-            this.clickMe.Name = "clickMe";
-            this.clickMe.Size = new System.Drawing.Size(75, 23);
-            this.clickMe.TabIndex = 0;
-            this.clickMe.Text = "Click Me!";
-            this.clickMe.UseVisualStyleBackColor = true;
-            this.clickMe.Click += new System.EventHandler(this.clickMe_Click);
-            // 
-            // textHere
-            // 
-            this.textHere.AutoSize = true;
-            this.textHere.Location = new System.Drawing.Point(456, 217);
-            this.textHere.Name = "textHere";
-            this.textHere.Size = new System.Drawing.Size(81, 13);
-            this.textHere.TabIndex = 1;
-            this.textHere.Text = "Text goes here!";
-            this.textHere.Click += new System.EventHandler(this.textHere_Click);
             // 
             // projectName
             // 
@@ -65,11 +43,10 @@
             this.projectName.Size = new System.Drawing.Size(545, 39);
             this.projectName.TabIndex = 3;
             this.projectName.Text = "PROJECT NAME WILL GO HERE";
-            this.projectName.Click += new System.EventHandler(this.textHere_Click);
             // 
             // nourhanPage
             // 
-            this.nourhanPage.Location = new System.Drawing.Point(587, 121);
+            this.nourhanPage.Location = new System.Drawing.Point(144, 286);
             this.nourhanPage.Name = "nourhanPage";
             this.nourhanPage.Size = new System.Drawing.Size(135, 65);
             this.nourhanPage.TabIndex = 4;
@@ -79,7 +56,7 @@
             // 
             // misbahPage
             // 
-            this.misbahPage.Location = new System.Drawing.Point(263, 121);
+            this.misbahPage.Location = new System.Drawing.Point(352, 286);
             this.misbahPage.Name = "misbahPage";
             this.misbahPage.Size = new System.Drawing.Size(135, 65);
             this.misbahPage.TabIndex = 5;
@@ -89,7 +66,7 @@
             // 
             // irishaPage
             // 
-            this.irishaPage.Location = new System.Drawing.Point(135, 175);
+            this.irishaPage.Location = new System.Drawing.Point(570, 286);
             this.irishaPage.Name = "irishaPage";
             this.irishaPage.Size = new System.Drawing.Size(135, 65);
             this.irishaPage.TabIndex = 6;
@@ -106,8 +83,6 @@
             this.Controls.Add(this.misbahPage);
             this.Controls.Add(this.nourhanPage);
             this.Controls.Add(this.projectName);
-            this.Controls.Add(this.textHere);
-            this.Controls.Add(this.clickMe);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -116,9 +91,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button clickMe;
-        private System.Windows.Forms.Label textHere;
         private System.Windows.Forms.Label projectName;
         private System.Windows.Forms.Button nourhanPage;
         private System.Windows.Forms.Button misbahPage;
