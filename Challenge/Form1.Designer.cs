@@ -1,4 +1,6 @@
-﻿namespace Challenge
+﻿using System;
+
+namespace Challenge
 {
     partial class Form1
     {
@@ -381,6 +383,7 @@
             this.PerformLayout();
 
         }
+
 
         #endregion
         private System.Windows.Forms.Button nourhanPage;

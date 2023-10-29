@@ -68,6 +68,12 @@
     <Compile Include="IrishaForm.Designer.cs">
       <DependentUpon>IrishaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProject.Designer.cs">
+      <DependentUpon>MainProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="MisbahForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz.Designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulationGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimulationGameForm.Designer.cs">
+      <DependentUpon>SimulationGameForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,7 +120,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulationGameForm.resx">
+      <DependentUpon>SimulationGameForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,6 +141,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christine-roy-ir5MHI6rPg0-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

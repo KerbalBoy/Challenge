@@ -38,6 +38,30 @@ namespace Challenge
             form.Show();
         }
 
+
+        private void projectName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QuizPage_Click_1(object sender, EventArgs e)
+        {
+            Quiz form = new Quiz();
+            form.Show();
+
+        }
+
+        private void simulationButton_Click(object sender, EventArgs e)
+        {
+            SimulationGameForm form = new SimulationGameForm();
+            form.Show();
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             textBox1.Text = IrishaForm.savings.ToString();
