@@ -15,6 +15,12 @@ namespace Challenge
         public MisbahForm()
         {
             InitializeComponent();
+
+        }
+
+        private void MisbahForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
