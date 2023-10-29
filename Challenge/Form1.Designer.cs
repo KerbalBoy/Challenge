@@ -1,4 +1,6 @@
-﻿namespace Challenge
+﻿using System;
+
+namespace Challenge
 {
     partial class Form1
     {
@@ -34,7 +36,7 @@
             this.irishaPage = new System.Windows.Forms.Button();
             this.mainProject = new System.Windows.Forms.Button();
             this.simulationButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();            this.SuspendLayout();
             // 
             // projectName
             // 
@@ -108,7 +110,16 @@
             this.mainProject.UseVisualStyleBackColor = false;
             this.mainProject.Click += new System.EventHandler(this.button1_Click);
             // 
-            // simulationButton
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(188, 186);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.QuizPage_Click_1);
             // 
             this.simulationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(244)))), ((int)(((byte)(199)))));
             this.simulationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(153)))), ((int)(((byte)(105)))));
@@ -122,6 +133,7 @@
             this.simulationButton.Text = "Simulation Game";
             this.simulationButton.UseVisualStyleBackColor = false;
             this.simulationButton.Click += new System.EventHandler(this.simulationButton_Click);
+            
             // 
             // Form1
             // 
@@ -130,6 +142,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.simulationButton);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.mainProject);
             this.Controls.Add(this.irishaPage);
             this.Controls.Add(this.misbahPage);
@@ -143,12 +156,16 @@
 
         }
 
+
         #endregion
         private System.Windows.Forms.Label projectName;
         private System.Windows.Forms.Button nourhanPage;
         private System.Windows.Forms.Button misbahPage;
         private System.Windows.Forms.Button irishaPage;
         private System.Windows.Forms.Button mainProject;
+        private System.Windows.Forms.Button button1;
+
+        public EventHandler Quiz_Click_1 { get; private set; }
         private System.Windows.Forms.Button simulationButton;
     }
 }
