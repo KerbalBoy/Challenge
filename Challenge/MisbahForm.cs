@@ -11,30 +11,40 @@ using System.Windows.Forms;
 namespace Challenge
 {
     public partial class MisbahForm : Form
-
     {
         private Timer quoteTimer = new Timer();
         private string[] DailyNotifications;
         private int currentNotificationIndex = 0;
         private bool showNotification = false;
+
         public MisbahForm()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(0x7a, 0x93, 0xac); // Set the background color to #7a93ac
+
             button1.Text = "Click here for a notification!";
+            button1.BackColor = Color.FromArgb(0x17, 0x1A, 0x21); // Set button background color to #171A21
+            button1.ForeColor = Color.White; // Set button text color to white
+
             label1.Text = "";
-            label2.Text = "Daily Notifications!!";
+            label2.Text = "DAILY NOTIFICATIONS";
+            label2.Font = new Font("Arial", 20, FontStyle.Bold);
+            label3.Text = "29/10/2023";
+            label2.Font = new Font("Arial", 20, FontStyle.Bold);
+            label3.Font = new Font("Arial", 20, FontStyle.Bold);
+
+
 
             DailyNotifications = new string[]
             {
-            "Start Saving Early! The earlier you start saving, the more your money can grow due to compound interest",
-            "Have Savings Goals! Having specific savings goals, like buying a car or going on a vacation, can motivate you to save",
-            "Avoid Spending Unnecessarily! Resisting impulse purchases allows you to save more of your income, which you can spend later on more expensive items",
-            "Save and Earn: Sometimes, you can earn money by helping with chores or selling items you don't need",
-            "Did You Know? Banks keep your money safe when you’re not using it. They also let people borrow (or loan) money. Banks charge customers fees, or interest, for borrowing the money!",
-            "Did You Know? Some countries share a currency. For example, countries in Europe all use the Euro. This makes buying and selling between countries less complicated"
+                "Start Saving Early! The earlier you start saving, the more your money can grow due to compound interest",
+                "Have Savings Goals! Having specific savings goals, like buying a car or going on a vacation, can motivate you to save",
+                "Avoid Spending Unnecessarily! Resisting impulse purchases allows you to save more of your income, which you can spend later on more expensive items",
+                "Save and Earn: Sometimes, you can earn money by helping with chores or selling items you don't need",
+                "Did You Know? Banks keep your money safe when you’re not using it. They also let people borrow (or loan) money. Banks charge customers fees, or interest, for borrowing the money!",
+                "Did You Know? Some countries share a currency. For example, countries in Europe all use the Euro. This makes buying and selling between countries less complicated"
             };
 
-            
             quoteTimer.Interval = 5000;
             quoteTimer.Tick += new EventHandler(ChangeQuote);
             quoteTimer.Start();
@@ -52,7 +62,7 @@ namespace Challenge
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showNotification = true; 
+            showNotification = true;
             label1.Text = DailyNotifications[currentNotificationIndex];
         }
 
@@ -64,6 +74,10 @@ namespace Challenge
         {
             label2.AutoSize = true;
         }
-        
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

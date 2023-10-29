@@ -116,8 +116,10 @@ namespace Challenge
             int weeks = Convert.ToInt16(Math.Round(Convert.ToDouble(textBox8.Text)/savings));  
             label18.Text = $"{ Convert.ToString(weeks)} weeks";
 
-        
+            double growth = Convert.ToDouble(label20.Text);
 
+
+            
 
 
         }
