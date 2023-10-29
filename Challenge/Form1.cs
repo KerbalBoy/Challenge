@@ -44,5 +44,11 @@ namespace Challenge
         {
 
         }
+
+        private void simulationButton_Click(object sender, EventArgs e)
+        {
+            SimulationGameForm form = new SimulationGameForm();
+            form.Show();
+        }
     }
 }

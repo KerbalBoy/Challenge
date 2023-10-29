@@ -375,7 +375,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NourhanForm";
-            this.Text = "NourhanForm";
+            this.Text = "ff";
             this.Load += new System.EventHandler(this.NourhanForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
