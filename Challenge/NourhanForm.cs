@@ -119,11 +119,7 @@ namespace Challenge
             double growth = Convert.ToDouble(label20.Text);
 
 
-            while (growth) < Convert.ToDouble(textBox8.Text))
-            {
-
-
-            }
+            
 
 
         }
