@@ -20,11 +20,11 @@ namespace Challenge
         public MisbahForm()
         {
             InitializeComponent();
-            this.BackColor = Color.FromArgb(0x7a, 0x93, 0xac); // Set the background color to #7a93ac
+            this.BackColor = Color.FromArgb(0x7a, 0x93, 0xac);
 
             button1.Text = "Click here for a notification!";
-            button1.BackColor = Color.FromArgb(0x17, 0x1A, 0x21); // Set button background color to #171A21
-            button1.ForeColor = Color.White; // Set button text color to white
+            button1.BackColor = Color.FromArgb(0x17, 0x1A, 0x21);
+            button1.ForeColor = Color.White;
 
             label1.Text = "";
             label2.Text = "DAILY NOTIFICATIONS";

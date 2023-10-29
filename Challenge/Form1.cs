@@ -35,6 +35,7 @@ namespace Challenge
             form.Show();
         }
 
+
         private void projectName_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +43,13 @@ namespace Challenge
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void QuizPage_Click_1(object sender, EventArgs e)
+        {
+            Quiz form = new Quiz();
+            form.Show();
 
         }
     }
